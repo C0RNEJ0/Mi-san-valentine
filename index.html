@@ -24,6 +24,7 @@
             font-size: 50px;
             color: red;
             animation: heartbeat 1s infinite;
+            cursor: pointer;
         }
         @keyframes heartbeat {
             0% { transform: scale(1); }
@@ -55,13 +56,18 @@
             color: #555;
         }
     </style>
+    <script>
+        function showMessage() {
+            alert('A ver las nalgas, mi vida ❤️');
+        }
+    </script>
 </head>
 <body>
     <div class="container">
         <h1>Feliz San Valentín ❤️</h1>
         <p>Esta página está hecha con mucho cariño para alguien especial.</p>
         <p><em>"Eres la razón por la que mi corazón late más fuerte cada día."</em></p>
-        <div class="heart">❤️</div>
+        <div class="heart" onclick="showMessage()">❤️</div>
         <button class="button" onclick="alert('¡Te quiero mucho! 💖')">Presiona aquí</button>
         <div class="image-container">
             <img src="Imagen_de_WhatsApp_2025-02-01_a_las_22.12.22_09e98c27.jpg" alt="Foto especial 1">
@@ -73,4 +79,3 @@
     </div>
 </body>
 </html>
-
